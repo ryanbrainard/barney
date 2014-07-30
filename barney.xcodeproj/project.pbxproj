@@ -12,6 +12,10 @@
 		2E7812F51988B72C003A90C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7812F41988B72C003A90C6 /* Images.xcassets */; };
 		2E7812F81988B72C003A90C6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7812F61988B72C003A90C6 /* MainMenu.xib */; };
 		2E7813041988B72C003A90C6 /* barneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7813031988B72C003A90C6 /* barneyTests.swift */; };
+		2E78130E1988B74A003A90C6 /* HerokuApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E78130D1988B74A003A90C6 /* HerokuApi.swift */; };
+		2E7813131988BB3C003A90C6 /* 128.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7813101988BB3C003A90C6 /* 128.png */; };
+		2E7813141988BB3C003A90C6 /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7813111988BB3C003A90C6 /* 32.png */; };
+		2E7813151988BB3C003A90C6 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7813121988BB3C003A90C6 /* 16.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,10 @@
 		2E7812FD1988B72C003A90C6 /* barneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = barneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E7813021988B72C003A90C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2E7813031988B72C003A90C6 /* barneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barneyTests.swift; sourceTree = "<group>"; };
+		2E78130D1988B74A003A90C6 /* HerokuApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HerokuApi.swift; sourceTree = "<group>"; };
+		2E7813101988BB3C003A90C6 /* 128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128.png; sourceTree = "<group>"; };
+		2E7813111988BB3C003A90C6 /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
+		2E7813121988BB3C003A90C6 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,10 +83,12 @@
 		2E7812ED1988B72C003A90C6 /* barney */ = {
 			isa = PBXGroup;
 			children = (
+				2E78130F1988BB21003A90C6 /* icons */,
 				2E7812F21988B72C003A90C6 /* AppDelegate.swift */,
 				2E7812F41988B72C003A90C6 /* Images.xcassets */,
 				2E7812F61988B72C003A90C6 /* MainMenu.xib */,
 				2E7812EE1988B72C003A90C6 /* Supporting Files */,
+				2E78130D1988B74A003A90C6 /* HerokuApi.swift */,
 			);
 			path = barney;
 			sourceTree = "<group>";
@@ -107,6 +117,16 @@
 				2E7813021988B72C003A90C6 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E78130F1988BB21003A90C6 /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				2E7813101988BB3C003A90C6 /* 128.png */,
+				2E7813111988BB3C003A90C6 /* 32.png */,
+				2E7813121988BB3C003A90C6 /* 16.png */,
+			);
+			name = icons;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,7 +209,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7813151988BB3C003A90C6 /* 16.png in Resources */,
+				2E7813131988BB3C003A90C6 /* 128.png in Resources */,
 				2E7812F51988B72C003A90C6 /* Images.xcassets in Resources */,
+				2E7813141988BB3C003A90C6 /* 32.png in Resources */,
 				2E7812F81988B72C003A90C6 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -209,6 +232,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2E7812F31988B72C003A90C6 /* AppDelegate.swift in Sources */,
+				2E78130E1988B74A003A90C6 /* HerokuApi.swift in Sources */,
 				2E7812F11988B72C003A90C6 /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
