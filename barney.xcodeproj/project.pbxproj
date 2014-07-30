@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E7812F11988B72C003A90C6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7812F01988B72C003A90C6 /* main.swift */; };
+		2E7812F31988B72C003A90C6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7812F21988B72C003A90C6 /* AppDelegate.swift */; };
+		2E7812F51988B72C003A90C6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E7812F41988B72C003A90C6 /* Images.xcassets */; };
+		2E7812F81988B72C003A90C6 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E7812F61988B72C003A90C6 /* MainMenu.xib */; };
+		2E7813041988B72C003A90C6 /* barneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E7813031988B72C003A90C6 /* barneyTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2E7812FE1988B72C003A90C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E7812E31988B72C003A90C6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E7812EA1988B72C003A90C6;
+			remoteInfo = barney;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2E7812EB1988B72C003A90C6 /* barney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = barney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7812EF1988B72C003A90C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E7812F01988B72C003A90C6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		2E7812F21988B72C003A90C6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2E7812F41988B72C003A90C6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		2E7812F71988B72C003A90C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2E7812FD1988B72C003A90C6 /* barneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = barneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2E7813021988B72C003A90C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2E7813031988B72C003A90C6 /* barneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = barneyTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2E7812E81988B72C003A90C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7812FA1988B72C003A90C6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2E7812E21988B72C003A90C6 = {
+			isa = PBXGroup;
+			children = (
+				2E7812ED1988B72C003A90C6 /* barney */,
+				2E7813001988B72C003A90C6 /* barneyTests */,
+				2E7812EC1988B72C003A90C6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2E7812EC1988B72C003A90C6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2E7812EB1988B72C003A90C6 /* barney.app */,
+				2E7812FD1988B72C003A90C6 /* barneyTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2E7812ED1988B72C003A90C6 /* barney */ = {
+			isa = PBXGroup;
+			children = (
+				2E7812F21988B72C003A90C6 /* AppDelegate.swift */,
+				2E7812F41988B72C003A90C6 /* Images.xcassets */,
+				2E7812F61988B72C003A90C6 /* MainMenu.xib */,
+				2E7812EE1988B72C003A90C6 /* Supporting Files */,
+			);
+			path = barney;
+			sourceTree = "<group>";
+		};
+		2E7812EE1988B72C003A90C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E7812EF1988B72C003A90C6 /* Info.plist */,
+				2E7812F01988B72C003A90C6 /* main.swift */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E7813001988B72C003A90C6 /* barneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				2E7813031988B72C003A90C6 /* barneyTests.swift */,
+				2E7813011988B72C003A90C6 /* Supporting Files */,
+			);
+			path = barneyTests;
+			sourceTree = "<group>";
+		};
+		2E7813011988B72C003A90C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2E7813021988B72C003A90C6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2E7812EA1988B72C003A90C6 /* barney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E7813071988B72C003A90C6 /* Build configuration list for PBXNativeTarget "barney" */;
+			buildPhases = (
+				2E7812E71988B72C003A90C6 /* Sources */,
+				2E7812E81988B72C003A90C6 /* Frameworks */,
+				2E7812E91988B72C003A90C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = barney;
+			productName = barney;
+			productReference = 2E7812EB1988B72C003A90C6 /* barney.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2E7812FC1988B72C003A90C6 /* barneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2E78130A1988B72C003A90C6 /* Build configuration list for PBXNativeTarget "barneyTests" */;
+			buildPhases = (
+				2E7812F91988B72C003A90C6 /* Sources */,
+				2E7812FA1988B72C003A90C6 /* Frameworks */,
+				2E7812FB1988B72C003A90C6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2E7812FF1988B72C003A90C6 /* PBXTargetDependency */,
+			);
+			name = barneyTests;
+			productName = barneyTests;
+			productReference = 2E7812FD1988B72C003A90C6 /* barneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E7812E31988B72C003A90C6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Ryan Brainard";
+				TargetAttributes = {
+					2E7812EA1988B72C003A90C6 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					2E7812FC1988B72C003A90C6 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = 2E7812EA1988B72C003A90C6;
+					};
+				};
+			};
+			buildConfigurationList = 2E7812E61988B72C003A90C6 /* Build configuration list for PBXProject "barney" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2E7812E21988B72C003A90C6;
+			productRefGroup = 2E7812EC1988B72C003A90C6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2E7812EA1988B72C003A90C6 /* barney */,
+				2E7812FC1988B72C003A90C6 /* barneyTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2E7812E91988B72C003A90C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7812F51988B72C003A90C6 /* Images.xcassets in Resources */,
+				2E7812F81988B72C003A90C6 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7812FB1988B72C003A90C6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2E7812E71988B72C003A90C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7812F31988B72C003A90C6 /* AppDelegate.swift in Sources */,
+				2E7812F11988B72C003A90C6 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2E7812F91988B72C003A90C6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7813041988B72C003A90C6 /* barneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2E7812FF1988B72C003A90C6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2E7812EA1988B72C003A90C6 /* barney */;
+			targetProxy = 2E7812FE1988B72C003A90C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2E7812F61988B72C003A90C6 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2E7812F71988B72C003A90C6 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2E7813051988B72C003A90C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2E7813061988B72C003A90C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2E7813081988B72C003A90C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = barney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		2E7813091988B72C003A90C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = barney/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		2E78130B1988B72C003A90C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/barney.app/Contents/MacOS/barney";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = barneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		2E78130C1988B72C003A90C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/barney.app/Contents/MacOS/barney";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = barneyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2E7812E61988B72C003A90C6 /* Build configuration list for PBXProject "barney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E7813051988B72C003A90C6 /* Debug */,
+				2E7813061988B72C003A90C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2E7813071988B72C003A90C6 /* Build configuration list for PBXNativeTarget "barney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E7813081988B72C003A90C6 /* Debug */,
+				2E7813091988B72C003A90C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2E78130A1988B72C003A90C6 /* Build configuration list for PBXNativeTarget "barneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2E78130B1988B72C003A90C6 /* Debug */,
+				2E78130C1988B72C003A90C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E7812E31988B72C003A90C6 /* Project object */;
+}
