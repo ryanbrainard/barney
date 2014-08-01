@@ -21,6 +21,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var state = State.Init
     var heroku: HerokuApi?
     var herokuAppName: String = ""
+    var sourceUrl: NSURL?
     
     func applicationDidFinishLaunching(notification: NSNotification!) {
         println("init")
@@ -45,6 +46,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func setLocalSourceUrl(sourceUrl: NSURL) {
         println("sourceUrl: \(sourceUrl)")
+        self.sourceUrl = sourceUrl
         self.sourceTextField.stringValue = sourceUrl.relativePath
         render()
     }
@@ -53,6 +55,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         println("DEPLOY!")
         state = State.Deploying
         render()
+        
+        let hdrop = HDrop()
+        let sourceStream = NSData(contentsOfURL: sourceUrl)
+        hdrop.put(sourceStream)
     }
     
     func render() {
