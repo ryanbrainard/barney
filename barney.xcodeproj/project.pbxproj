@@ -16,6 +16,9 @@
 		2E7813131988BB3C003A90C6 /* 128.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7813101988BB3C003A90C6 /* 128.png */; };
 		2E7813141988BB3C003A90C6 /* 32.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7813111988BB3C003A90C6 /* 32.png */; };
 		2E7813151988BB3C003A90C6 /* 16.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E7813121988BB3C003A90C6 /* 16.png */; };
+		2E9EF0F9198A11BE00637F8F /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E9EF0F8198A11BE00637F8F /* README.md */; };
+		2E9EF0FB198A19E400637F8F /* DragZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9EF0FA198A19E400637F8F /* DragZone.swift */; };
+		2E9EF0FD198B3FAE00637F8F /* State.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E9EF0FC198B3FAE00637F8F /* State.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		2E7813101988BB3C003A90C6 /* 128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128.png; sourceTree = "<group>"; };
 		2E7813111988BB3C003A90C6 /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 32.png; sourceTree = "<group>"; };
 		2E7813121988BB3C003A90C6 /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 16.png; sourceTree = "<group>"; };
+		2E9EF0F8198A11BE00637F8F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2E9EF0FA198A19E400637F8F /* DragZone.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DragZone.swift; sourceTree = "<group>"; };
+		2E9EF0FC198B3FAE00637F8F /* State.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = State.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +71,7 @@
 		2E7812E21988B72C003A90C6 = {
 			isa = PBXGroup;
 			children = (
+				2E9EF0F8198A11BE00637F8F /* README.md */,
 				2E7812ED1988B72C003A90C6 /* barney */,
 				2E7813001988B72C003A90C6 /* barneyTests */,
 				2E7812EC1988B72C003A90C6 /* Products */,
@@ -89,6 +96,8 @@
 				2E7812F61988B72C003A90C6 /* MainMenu.xib */,
 				2E7812EE1988B72C003A90C6 /* Supporting Files */,
 				2E78130D1988B74A003A90C6 /* HerokuApi.swift */,
+				2E9EF0FA198A19E400637F8F /* DragZone.swift */,
+				2E9EF0FC198B3FAE00637F8F /* State.swift */,
 			);
 			path = barney;
 			sourceTree = "<group>";
@@ -231,9 +240,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E9EF0FB198A19E400637F8F /* DragZone.swift in Sources */,
 				2E7812F31988B72C003A90C6 /* AppDelegate.swift in Sources */,
 				2E78130E1988B74A003A90C6 /* HerokuApi.swift in Sources */,
+				2E9EF0F9198A11BE00637F8F /* README.md in Sources */,
 				2E7812F11988B72C003A90C6 /* main.swift in Sources */,
+				2E9EF0FD198B3FAE00637F8F /* State.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,6 +433,7 @@
 				2E7813091988B72C003A90C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E78130A1988B72C003A90C6 /* Build configuration list for PBXNativeTarget "barneyTests" */ = {
 			isa = XCConfigurationList;
@@ -429,6 +442,7 @@
 				2E78130C1988B72C003A90C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

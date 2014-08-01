@@ -13,8 +13,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var window: NSWindow!
     @IBOutlet weak var userEmail: NSTextField!
     @IBOutlet weak var appSelector: NSComboBox!
+    @IBOutlet weak var sourceTextField: NSTextField!
+    @IBOutlet weak var deployButton: NSButton!
+    @IBOutlet weak var progressBar: NSProgressIndicator!
+    @IBOutlet weak var progressBarStatus: NSTextField!
     
+    var state = State.Init
     var heroku: HerokuApi?
+    var herokuAppName: String = ""
+    
+    func applicationDidFinishLaunching(notification: NSNotification!) {
+        println("init")
+        deployButton.enabled = false
+        render()
+    }
     
     @IBAction func setApiToken(sender: AnyObject) {
         if sender.stringValue != "" && (heroku?.token != sender.stringValue || !heroku?) {
@@ -22,6 +34,35 @@ class AppDelegate: NSObject, NSApplicationDelegate {
             refreshUserInfo()
             refreshAppList()
         }
+        render()
+    }
+    
+    @IBAction func setAppName(sender: AnyObject) {
+        println("herokuAppName: \(sender.stringValue)")
+        herokuAppName = sender.stringValue
+        render()
+    }
+    
+    func setLocalSourceUrl(sourceUrl: NSURL) {
+        println("sourceUrl: \(sourceUrl)")
+        self.sourceTextField.stringValue = sourceUrl.relativePath
+        render()
+    }
+    
+    @IBAction func deploy(sender: NSButton) {
+        println("DEPLOY!")
+        state = State.Deploying
+        render()
+    }
+    
+    func render() {
+        if userEmail.stringValue != nil &&
+            herokuAppName != nil &&
+            sourceTextField.stringValue != nil {
+                deployButton.enabled = true
+        }
+        
+        progressBar.hidden = state == State.Init
     }
     
     func refreshUserInfo() {
