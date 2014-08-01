@@ -11,7 +11,7 @@ import Cocoa
 class HDrop {
     let hdropUrl = NSURL(string: "https://hdrop.herokuapp.com")
     let verbose = true
-    var urls: NSDictionary?
+    private var urls: NSDictionary?
     
     init() {}
     
@@ -32,7 +32,7 @@ class HDrop {
         }
     }
     
-    private func withUrls<T>(action: (NSDictionary) -> T) {
+    func withUrls<T>(action: (NSDictionary) -> T) {
         // TODO: synchronize
         if !urls? {
             request(hdropUrl) { (urls: NSDictionary) in
