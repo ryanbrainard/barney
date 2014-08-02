@@ -11,11 +11,10 @@ import Cocoa
 class HDrop {
     let hdropUrl = NSURL(string: "https://hdrop.herokuapp.com")
     let verbose = true
-    private var urls: NSDictionary?
     
     init() {}
     
-    func put(source: NSData) {
+    func upload(source: NSData, withGetUrl: (NSURL) -> Void) {
         withUrls { urls -> Void in
             let putUrl = NSURL(string: urls["put"] as String!)
             let request = NSMutableURLRequest(URL: putUrl)
@@ -28,20 +27,15 @@ class HDrop {
                     println(NSString(data: data, encoding: NSUTF8StringEncoding))
                     println(httpError)
                 }
+                withGetUrl(NSURL(string: urls["get"] as String!))
             }
         }
     }
     
-    func withUrls<T>(action: (NSDictionary) -> T) {
-        // TODO: synchronize
-        if !urls? {
-            request(hdropUrl) { (urls: NSDictionary) in
-                println("hdrop urls: \(urls)")
-                self.urls = urls
-                action(urls)
-            }
-        } else {
-            action(urls!)
+    private func withUrls<T>(action: (NSDictionary) -> T) {
+        request(hdropUrl) { (urls: NSDictionary) in
+            println("hdrop urls: \(urls)")
+            action(urls)
         }
     }
     

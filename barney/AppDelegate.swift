@@ -17,6 +17,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var deployButton: NSButton!
     @IBOutlet weak var progressBar: NSProgressIndicator!
     @IBOutlet weak var progressBarStatus: NSTextField!
+    @IBOutlet var buildOutputTextView: NSTextView!
     
     var state = State.Init
     var heroku: HerokuApi?
@@ -57,8 +58,20 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         render()
         
         let hdrop = HDrop()
-        let sourceStream = NSData(contentsOfURL: sourceUrl)
-        hdrop.put(sourceStream)
+        let sourceData = NSData(contentsOfURL: sourceUrl)
+        hdrop.upload(sourceData) { getUrl in
+            println(getUrl)
+            self.heroku?.build(self.herokuAppName, sourceBlobUrl: getUrl, handler: { (build) in
+                println(build)
+                let outputStreamUrl = NSURL(string: build["output_stream_url"] as String)
+                self.buildOutputTextView.string = ""
+                let busl = BuslClient(url: outputStreamUrl) { data in
+                    let dataStr = NSString(data:data, encoding:NSUTF8StringEncoding)
+                    self.buildOutputTextView.string = self.buildOutputTextView.string + dataStr
+                }
+                busl.start()
+            })
+        }
     }
     
     func render() {
